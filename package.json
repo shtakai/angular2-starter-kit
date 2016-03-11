@@ -1,7 +1,7 @@
 {
   "name": "angular2-starter-kit",
   "version": "0.1.0",
-  "description": "",
+  "description": "Save yourself countless hours of perfect stack config – it's already done.",
   "author": "Peter Machowski <peter@machowski.co> (https://github.com/pmachowski)",
   "license": "MIT",
   "homepage": "http://www.angular2starterkit.com",
@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "angular2": "2.0.0-beta.9",
-    "angular2-universal-preview": "0.80.0",
+    "angular2-universal-preview": "0.70.8",
     "compression": "^1.6.1",
     "css": "^2.2.1",
     "es6-promise": "^3.1.2",
