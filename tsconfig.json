@@ -1,0 +1,40 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "declaration": false,
+    "removeComments": true,
+    "noEmitHelpers": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  },
+  "files": [
+    "./src/app/app.ts",
+    "./src/app/boot.ts",
+    "./src/app/pages/home/home.component.ts",
+    "./src/boot_browser.ts",
+    "./src/boot_worker_app.ts",
+    "./src/boot_worker.ts",
+    "./src/server/ng.ts",
+    "./src/server/server.ts",
+    "./test/unit.spec.ts",
+    "./typings.d.ts"
+  ],
+  "filesGlob": [
+    "./src/**/*.ts",
+    "./test/unit.spec.ts",
+    "./typings.d.ts",
+    "!node_modules/**",
+    "!dist/**",
+    "!logs/**",
+    "!assets/**",
+    "!.git/**"
+  ],
+  "buildOnSave": false,
+  "atom": {
+    "rewriteTsconfig": true
+  }
+}
