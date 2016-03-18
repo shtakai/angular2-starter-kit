@@ -12,7 +12,7 @@
     "clean:dist": "rimraf dist",
     "clean:logs": "rimraf logs",
     "prebuild": "npm run clean:dist",
-    "build:dev": "NODE_ENV=dev node tools/build.dev.js",
+    "build:dev": "node tools/build.dev.js",
     "build": "node tools/build.prod.js",
     "build:aws": "node tools/build.aws.js",
     "start": "npm run serve",

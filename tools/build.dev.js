@@ -4,10 +4,12 @@ require('reflect-metadata');
 require('zone.js/dist/zone-microtask');
 require('zone.js/dist/long-stack-trace-zone');
 
+// set the dev environment variable
+process.env.NODE_ENV = 'dev';
+
 const path = require('path');
 const webpack = require('webpack');
 const WebpackDevServer = require('webpack-dev-server');
-var MemoryFileSystem = require("memory-fs");
 const constants = require('../constants');
 const configs = require('../webpack.dev.config.js');
 
