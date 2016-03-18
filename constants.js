@@ -7,7 +7,7 @@ if (IS_DEV_ENV) {
   var path = require('path');
   fixPath = function (basePath, dir) {return path.resolve(basePath, dir)};
 } else {
-  fixPath = function(basePath, dir) {return basePath + '/' + dir};
+  fixPath = function(basePath, dir) {return dir ? basePath + '/' + dir : basePath};
 }
 exports.IS_DEV_ENV = IS_DEV_ENV;
 

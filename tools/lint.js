@@ -2,7 +2,6 @@
 
 const os = require('os');
 const fs = require('fs');
-const path = require('path');
 const chalk = require('chalk');
 const Linter = require('tslint');
 const chokidar = require('chokidar');
@@ -12,6 +11,8 @@ const tslintJson = require('../tslint.json');
 const EOL = os.EOL;
 
 const SRC_DIR = constants.SRC_DIR;
+console.log('src: ', SRC_DIR);
+console.log('root: ', constants.ROOT_DIR);
 const SUCCESS_MESSAGE = 'TSLint: Everything is OK';
 
 const SHOULD_WATCH = process.argv.indexOf('--watch') !== -1;
