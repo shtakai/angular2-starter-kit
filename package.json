@@ -6,7 +6,6 @@
   "license": "MIT",
   "homepage": "http://www.angular2starterkit.com",
   "scripts": {
-    "postinstall": "if test \"$NODE_ENV\" != \"production\" ; then typings install && npm run webdriver:update ; fi",
     "reinstall": "npm run clean:dist && rimraf node_modules && npm install",
     "clean": "rimraf dist logs",
     "clean:dist": "rimraf dist",
@@ -14,9 +13,10 @@
     "prebuild": "npm run clean:dist",
     "build:dev": "node tools/build.dev.js",
     "build": "node tools/build.prod.js",
-    "build:aws": "node tools/build.aws.js",
+    "prestart": "npm run build",
     "start": "npm run serve",
     "serve": "node ./dist/private/serve.js",
+    "serve:pm2": "pm2 start ecosystem.json",
     "test": "npm run unit && npm run e2e",
     "unit": "karma start --single-run --path--",
     "unit:watch": "karma start --path--",
@@ -29,7 +29,7 @@
     "logs": "pm2 logs $(node -e \"console.log(require('./ecosystem.json').name)\")",
     "pm2": "pm2",
     "webpack": "webpack",
-    "typings": "typings",
+    "typings": "typings install",
     "karma": "karma",
     "protractor": "protractor",
     "webdriver": "webdriver-manager"

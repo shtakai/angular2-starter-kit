@@ -23,8 +23,8 @@
 
 # Quick start
 ```bash
-# install dependencies
-npm install
+# install npm & typings dependencies
+npm install && npm run typings
 
 # build and run the production server
 npm start
@@ -48,8 +48,12 @@ npm run build
 
 # Running Server
 ```bash
-# run the server with pm2
+# run the server with node
 npm run serve
+
+# OR
+# run the server with pm2
+npm run serve:pm2
 ```
 
 ## Development with Live Reloading
@@ -58,7 +62,7 @@ npm run serve
 npm stop
 
 # run the development server with live reloading support
-npm run dev
+npm run build:dev
 ```
 
 The development server will watch for any changes, make rebuilds and reload a browser. All built code will be kept in
@@ -130,13 +134,16 @@ npm run unit:watch src/app/app.spec.ts
 ## End-to-End Testing
 For end-to-end tests you need to start Selenium Server (webdriver) and application server first.
 ```bash
-# build and start application server
+# update selenium server (you need to run it only once)
+npm run webdriver:update
+
+# (1 terminal/cmd window) build and start application server
 npm run build && npm run serve
 
-# start Selenium Server (webdriver)
+# (2 terminal/cmd window) start Selenium Server (webdriver)
 npm run webdriver:start
 
-# run end-to-end test (single run)
+# (3 terminal/cmd window) run end-to-end test (single run)
 npm run e2e
 ```
 
