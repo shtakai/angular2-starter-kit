@@ -382,9 +382,6 @@ input.btn {
   margin-top: @scale-base;
 }
 
-.navbar-nav {
-  margin-top: @scale-base;
-}
 
 .navbar-default .navbar-toggle {
   margin-top: 24px;
@@ -403,10 +400,19 @@ input.btn {
   }
 }
 
+.navbar-nav {
+  margin: @scale2 0;
+  padding: 0;
+  list-style: none;
+}
+
 .navbar-default .navbar-nav .nav-item {
-  color: @brand-color-3;
-  &:extend(.text-uppercase);
   font-size: 18px;
+  margin-left: 20px;
+
+  strong {
+    color: @brand-color-2;
+  }
 
   &:visited {
     color: @brand-color-3;
@@ -414,17 +420,6 @@ input.btn {
 
   &:hover {
     color: @brand-color-4;
-  }
-
-  &.btn {
-    color: @brand-color-3;
-    font-weight: 500;
-    font-size: 18px;
-
-    &:hover {
-      border-color: @brand-color-4;
-      color: @brand-color-4;
-    }
   }
 }
 
