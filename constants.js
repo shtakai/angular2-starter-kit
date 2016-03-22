@@ -18,7 +18,7 @@ exports.WORKER_NAME     = 'worker';
 exports.WORKER_APP_NAME = 'worker_app';
 
 exports.HOST = process.env.HOST || 'localhost';
-exports.PORT = +process.env.PORT || 3000;
+exports.PORT = process.env.PORT || 3000;
 
 exports.ROOT_DIR    = fixPath('.', '');
 exports.SRC_DIR     = fixPath(exports.ROOT_DIR, 'src');
