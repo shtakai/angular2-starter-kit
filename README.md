@@ -1,4 +1,4 @@
-# Angular 2 Starter Kit
+![Please Star](http://pmachowski.github.io/ghh/images/please_star.jpg)
 
 
 # What we've got here
