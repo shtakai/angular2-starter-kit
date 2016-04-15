@@ -2,13 +2,11 @@
 
 const webpack = require('webpack');
 const fs      = require('fs');
-const path    = require('path');
-const zlib    = require('zlib');
 
 const OccurenceOrderPlugin = require('webpack/lib/optimize/OccurenceOrderPlugin');
 const DedupePlugin         = require('webpack/lib/optimize/DedupePlugin');
 const UglifyJsPlugin       = require('webpack/lib/optimize/UglifyJsPlugin');
-const CommonsChunkPlugin   = require('webpack/lib/optimize/CommonsChunkPlugin');
+// const CommonsChunkPlugin   = require('webpack/lib/optimize/CommonsChunkPlugin');
 const CompressionPlugin    = require('compression-webpack-plugin');
 const CopyWebpackPlugin    = require('copy-webpack-plugin');
 const WebpackMd5Hash       = require('webpack-md5-hash');
@@ -146,7 +144,7 @@ const UGLIFY_JS_PLUGIN = new UglifyJsPlugin({
     });
 
 const COMPRESSION_PLUGIN = new CompressionPlugin({
-      algorithm: gzipMaxLevel,
+      algorithm: 'gzip',
       regExp: /\.css$|\.html$|\.js$|\.map$/,
       threshold: 2 * 1024
     });
@@ -215,12 +213,6 @@ const POSTCSS = function() {
     require('postcss-cssnext')
   ];
 };
-
-
-// Helper functions
-function gzipMaxLevel(buffer, callback) {
-  return zlib['gzip'](buffer, {level: 9}, callback)
-}
 
 // CONFIGS
 const VENDOR_CONFIG = {
