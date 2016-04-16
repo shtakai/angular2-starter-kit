@@ -1,5 +1,5 @@
-import * as serveStatic from 'serve-static';
 import * as express from 'express';
+import * as serveStatic from 'serve-static';
 import { Request, Response } from 'express';
 import { router as ngRouter } from './ng';
 const compression = require('compression');
