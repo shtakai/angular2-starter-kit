@@ -7,7 +7,7 @@ import {
   selectorResolver,
   selectorRegExpFactory,
   renderToStringWithPreboot
-} from 'angular2-universal-preview';
+} from 'angular2-universal';
 
 const constants = require('../../constants');
 if (!constants.IS_DEV_ENV) {

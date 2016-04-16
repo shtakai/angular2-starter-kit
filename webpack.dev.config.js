@@ -168,7 +168,7 @@ const VENDOR_CONFIG = {
       'es6-shim',
       'es6-promise',
       'reflect-metadata',
-      'zone.js/dist/zone-microtask',
+      'zone.js/dist/zone',
       'zone.js/dist/long-stack-trace-zone',
       'angular2/core',
       'angular2/router',

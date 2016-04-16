@@ -13,7 +13,6 @@
   },
   "files": [
     "./src/app/app.ts",
-    "./src/app/boot.ts",
     "./src/app/pages/home/components/downloadSection.component.ts",
     "./src/app/pages/home/components/tagline.component.ts",
     "./src/app/pages/home/home.component.ts",

@@ -4,7 +4,7 @@ declare var __karma__: any;
 import 'es6-shim';
 import 'es6-promise';
 import 'reflect-metadata';
-import 'zone.js/dist/zone-microtask';
+import 'zone.js/dist/zone-node';
 import 'zone.js/dist/long-stack-trace-zone';
 import 'zone.js/dist/jasmine-patch.js';
 import 'angular2/core';

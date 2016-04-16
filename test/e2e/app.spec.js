@@ -11,7 +11,7 @@ describe('Angular 2 Starter Kit', function() {
       const header = element(by.css('h1'));
 
       expect(header.isPresent()).toBeTruthy();
-      expect(header.getText()).toBe('Save yourself countless hours of perfect stack config – it\'s already done.');
+      expect(header.getText()).toBe('Save yourself countless hours on perfecting your stack – it\'s already done.');
     });
   });
 });

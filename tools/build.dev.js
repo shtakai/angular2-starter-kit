@@ -1,7 +1,7 @@
 'use strict';
 
 require('reflect-metadata');
-require('zone.js/dist/zone-microtask');
+require('zone.js/dist/zone-node');
 require('zone.js/dist/long-stack-trace-zone');
 
 // set the dev environment variable
