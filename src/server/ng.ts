@@ -26,7 +26,7 @@ const BROWSER_SCRIPTS = [`${VENDOR_NAME}.js`, `${BROWSER_NAME}.js`].reduce(reduc
 const HTML_FILE = require('./index.html');
 
 export function renderComponent(html, component, providers, prebootOptions) {
-  return renderToStringWithPreboot(component, providers, prebootOptions).then((serializedCmp) => {
+  return renderDocumentWithPreboot(html, component, providers, prebootOptions).then((serializedCmp) => {
     const selector: string = selectorResolver(component);
 
     return html.replace(selectorRegExpFactory(selector), serializedCmp);
