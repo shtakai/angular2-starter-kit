@@ -6,7 +6,7 @@ import {
   NODE_LOCATION_PROVIDERS,
   selectorResolver,
   selectorRegExpFactory,
-  renderToStringWithPreboot
+  renderDocumentWithPreboot
 } from 'angular2-universal';
 
 const constants = require('../../constants');
