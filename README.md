@@ -3,6 +3,8 @@
 
 # What we've got here
 
+[![GuardRails badge](https://badges.production.guardrails.io/shtakai/angular2-starter-kit.svg)](https://www.guardrails.io)
+
 - [Server Side rendering](https://angularu.com/VideoSession/2015sf/angular-2-server-rendering) for instant page loading
 - Entire Angular2 application is running in a [Web Worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) (UI always will be smooth)
 - [Preboot](https://www.npmjs.com/package/preboot) to catch browser events before Angular2 is ready to work.
